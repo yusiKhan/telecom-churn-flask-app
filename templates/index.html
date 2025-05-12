@@ -169,13 +169,15 @@
 
     {% if prediction_text %}
     <div class="alert alert-info text-center mt-4">
-        {{ prediction_text }}
+    {{ prediction_text|safe }}
     </div>
+
 
 
     {% endif %}
 </div>
-    <footer class="text-center mt-5 text-muted small">
+
+ <footer class="text-center mt-5 text-muted small">
      Developed by <strong>Muhammad Yousaf Khan</strong> – Aspiring Data Scientist | MS Computer Science | AI & Machine Learning Enthusiast
 </footer>
 

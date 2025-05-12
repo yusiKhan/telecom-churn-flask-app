@@ -69,7 +69,6 @@ def predict():
 
         prediction = model.predict([final_input])[0]
         result = "Customer is likely to <strong>Churn</strong> ❌" if prediction == 1 else "Customer is likely to <strong>Stay</strong> ✅"
-
         return render_template('index.html', prediction_text=result)
 
     except Exception as e:
